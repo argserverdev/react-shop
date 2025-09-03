@@ -31,7 +31,19 @@ Follow these instructions to get a copy of the project up and running on your lo
 - [npm](https://www.npmjs.com/) or your favorite package manager
 - A running instance of the backend server on `http://localhost:3000`
 
-### Installation & Setup
+### Backend Setup
+
+This frontend requires a running backend server.
+
+1.  **Clone the backend repository:**
+    ```bash
+    git clone git@github.com:argserverdev/react-shop-backend.git
+    cd react-shop-backend
+    ```
+
+2.  **Follow the instructions** in the backend's `README.md` file to install dependencies and run the server. It should be running on `http://localhost:3000`.
+
+### Frontend Setup
 
 1.  **Clone the repository:**
     ```bash
