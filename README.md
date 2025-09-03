@@ -45,26 +45,21 @@ This frontend requires a running backend server.
 
 ### Frontend Setup
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/react-shop.git
-    cd react-shop
-    ```
+Once you have the backend running, you can set up the frontend.
 
-2.  **Set up environment variables:**
+1.  **Set up environment variables:**
     Copy the `.env.template` file to a new `.env` file. This file will hold your local environment variables.
     ```bash
     cp .env.template .env
     ```
     The default configuration points to a backend API at `http://localhost:3000/api`.
 
-3.  **Install dependencies:**
+2.  **Install dependencies:**
     ```bash
     npm install
     ```
 
-4.  **Run the development server:**
-    Make sure your backend is running on port 3000, then start the frontend development server.
+3.  **Run the development server:**
     ```bash
     npm run dev
     ```
