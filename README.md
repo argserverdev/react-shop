@@ -29,8 +29,9 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 - [Node.js](https://nodejs.org/) (v18 or higher recommended)
 - [npm](https://www.npmjs.com/) or your favorite package manager
+- A running instance of the backend server on `http://localhost:3000`
 
-### Installation
+### Installation & Setup
 
 1.  **Clone the repository:**
     ```bash
@@ -38,12 +39,20 @@ Follow these instructions to get a copy of the project up and running on your lo
     cd react-shop
     ```
 
-2.  **Install dependencies:**
+2.  **Set up environment variables:**
+    Copy the `.env.template` file to a new `.env` file. This file will hold your local environment variables.
+    ```bash
+    cp .env.template .env
+    ```
+    The default configuration points to a backend API at `http://localhost:3000/api`.
+
+3.  **Install dependencies:**
     ```bash
     npm install
     ```
 
-3.  **Run the development server:**
+4.  **Run the development server:**
+    Make sure your backend is running on port 3000, then start the frontend development server.
     ```bash
     npm run dev
     ```
