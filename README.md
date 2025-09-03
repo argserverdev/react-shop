@@ -1,89 +1,71 @@
-# React Shop
+# Teslo Shop - React E-commerce Platform
 
-Este es un proyecto de una tienda en línea moderna construida con React, TypeScript y Vite. Utiliza Tailwind CSS para el estilizado y componentes de Radix UI como base para la interfaz de usuario.
+This is a modern, full-featured e-commerce web application built with React, TypeScript, and Vite. It provides a complete shopping experience, from browsing products to user authentication, along with a dedicated administration panel for managing the store.
 
-## Objetivo del Proyecto
+## ✨ Features
 
-El objetivo de este proyecto es demostrar la construcción de una aplicación de comercio electrónico front-end completa y moderna utilizando las últimas tecnologías y mejores prácticas del ecosistema de React. Sirve como un ejemplo práctico de cómo estructurar una aplicación escalable, mantener un código limpio y ofrecer una experiencia de usuario fluida.
+- **Modern Tech Stack:** Built with React, TypeScript, and Vite for a fast and efficient development experience.
+- **User Authentication:** Secure login and registration functionality.
+- **Product Catalog:** Browse products by category (men, women, kids).
+- **Product Details Page:** View detailed information for each product.
+- **Administration Panel:** A dedicated dashboard for administrators to manage products.
+- **Responsive Design:** Fully responsive layout for a seamless experience on any device.
+- **Component-Based:** Organized using `shadcn/ui` for a consistent and maintainable component library.
 
-## Características
+## 🛠️ Technologies Used
 
-- **Stack Moderno:** React 19, Vite, y TypeScript.
-- **Estilizado con Tailwind CSS:** Un framework de CSS "utility-first" para un diseño rápido y responsivo.
-- **Componentes Accesibles:** Usa Radix UI como base para componentes de UI personalizados y accesibles.
-- **Enrutamiento:** Implementado con `react-router-dom` para una navegación fluida entre páginas.
-- **Linting:** Configurado con ESLint para mantener la calidad y consistencia del código.
-- **Estructura Escalable:** Organizado en módulos (auth, admin, shop) para una mejor separación de responsabilidades.
-
-## Tecnologías Utilizadas
-
-- **Framework:** [React 19](https://react.dev/)
-- **Bundler:** [Vite](https://vitejs.dev/)
-- **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
-- **Enrutamiento:** [React Router](https://reactrouter.com/)
-- **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
-- **Componentes UI:** [Radix UI](https://www.radix-ui.com/) y [shadcn/ui](https://ui.shadcn.com/)
+- **Frontend:** [React](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) & [shadcn/ui](https://ui.shadcn.com/)
+- **Routing:** [React Router DOM](https://reactrouter.com/)
 - **Linting:** [ESLint](https://eslint.org/)
 
-## Empezando
+## 🚀 Getting Started
 
-Sigue estas instrucciones para tener una copia del proyecto corriendo en tu máquina local para desarrollo y pruebas.
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerrequisitos
+### Prerequisites
 
-- [Node.js](https://nodejs.org/) (versión 20.x o superior recomendada)
-- [npm](https://www.npmjs.com/) (usualmente viene con Node.js)
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) or your favorite package manager
 
-### Instalación
+### Installation
 
-1.  Clona el repositorio:
-    ```sh
-    git clone https://github.com/tu-usuario/react-shop.git
-    ```
-2.  Navega al directorio del proyecto:
-    ```sh
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/react-shop.git
     cd react-shop
     ```
-3.  Instala las dependencias:
-    ```sh
+
+2.  **Install dependencies:**
+    ```bash
     npm install
     ```
 
-## Scripts Disponibles
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-En el directorio del proyecto, puedes correr:
+The application will be available at `http://localhost:5173`.
 
-### `npm run dev`
+## 📂 Project Structure
 
-Corre la aplicación en modo de desarrollo.
-Abre [http://localhost:5173](http://localhost:5173) para verla en tu navegador. La página se recargará si haces cambios.
-
-### `npm run build`
-
-Compila la aplicación para producción en la carpeta `dist`.
-Empaqueta React en modo de producción y optimiza la compilación para el mejor rendimiento.
-
-### `npm run lint`
-
-Ejecuta el linter (ESLint) en todos los archivos del proyecto para verificar problemas de estilo y código.
-
-### `npm run preview`
-
-Inicia un servidor local para previsualizar la compilación de producción que se encuentra en `dist`.
-
-## Estructura del Proyecto
+The project is organized into several key directories:
 
 ```
-react-shop/
-├── src/
-│   ├── admin/         # Layouts y páginas de administración
-│   ├── assets/        # Imágenes y otros recursos estáticos
-│   ├── auth/          # Componentes y páginas de autenticación
-│   ├── components/    # Componentes de UI reutilizables (base y personalizados)
-│   ├── lib/           # Funciones de utilidad (ej. cn para clases de Tailwind)
-│   ├── mocks/         # Datos de prueba para simular una API
-│   └── shop/          # Componentes y páginas principales de la tienda
-├── public/            # Archivos estáticos públicos
-├── package.json       # Dependencias y scripts del proyecto
-└── vite.config.ts     # Configuración de Vite
+/src
+├── admin/         # Admin dashboard pages, layouts, and components
+├── assets/        # Static assets like images and SVGs
+├── auth/          # Authentication pages (Login, Register)
+├── components/    # Shared UI components (custom & shadcn/ui)
+├── lib/           # Utility functions
+├── mocks/         # Mock data for development
+└── shop/          # Main e-commerce pages, layouts, and components
 ```
+
+-   **`src/admin`**: Contains all components, layouts, and pages related to the administration dashboard.
+-   **`src/auth`**: Handles user authentication, including login and registration pages.
+-   **`src/components`**: Holds reusable UI components used throughout the application. `components/ui` are from `shadcn/ui`, and `components/custom` are project-specific.
+-   **`src/shop`**: Contains the core e-commerce experience, including the home page, product listings, and product detail pages.

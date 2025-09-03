@@ -1,15 +1,13 @@
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { CustomLogo } from '@/components/custom/CustomLogo';
 import { Link } from 'react-router';
-import { Card, CardContent } from '../../../components/ui/card';
-import { CustomLogo } from '../../../components/custom/CustomLogo';
-import { Label } from '../../../components/ui/label';
-import { Input } from '../../../components/ui/input';
-import { Button } from '../../../components/ui/button';
-
-
 
 export const RegisterPage = () => {
   return (
-    <div className={ 'flex flex-col gap-6' }>
+    <div className={'flex flex-col gap-6'}>
       <Card className="overflow-hidden p-0  ">
         <CardContent className="grid p-0 md:grid-cols-2">
           <form className="p-6 md:p-8">
@@ -95,7 +93,7 @@ export const RegisterPage = () => {
                 </Button>
               </div>
               <div className="text-center text-sm">
-                ¿Ya tienes cuenta?{ ' ' }
+                ¿Ya tienes cuenta?{' '}
                 <Link to="/auth/login" className="underline underline-offset-4">
                   Ingresa ahora
                 </Link>
@@ -112,8 +110,8 @@ export const RegisterPage = () => {
         </CardContent>
       </Card>
       <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-primary">
-        Haciendo click, estás de acuerdo con{ ' ' }
-        <a href="#">términos y condiciones</a> y{ ' ' }
+        Haciendo click, estás de acuerdo con{' '}
+        <a href="#">términos y condiciones</a> y{' '}
         <a href="#">políticas de uso</a>.
       </div>
     </div>
